@@ -1,5 +1,7 @@
 const { User, Thought } = require('../models');
 
+
+
 const resolvers = {
     Query: {
       //get all thoughts by username
@@ -25,7 +27,14 @@ const resolvers = {
         .populate('friends')
         .populate('thoughts');
       },
+      
+      
+      
     }
   };
-  
-  module.exports = resolvers;
+
+
+
+    
+
+module.exports = resolvers;
